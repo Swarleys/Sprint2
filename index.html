@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.min.css" />
+
+    <script
+      src="./src/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <title>Sprint2</title>
+  </head>
+  <body>
+    <header class="container mb-5">
+      <nav
+        class="navbar navbar-expand-md navbar-light sticky-top align-items-center pt-3"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./images/logo-bookmark.svg"
+              alt="Bookmark logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+          <img src="./images/icon-hamburger.svg" alt="hamburguer icon">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0 align-items-center gap-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >FEATURES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRICING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><button
+                    type="button"
+                    class="btn btn-secondary text-white px-4"
+                  >
+                    LOGIN
+                  </button></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="position-relative overflow-hidden hero_section pt-3 mb-5">
+      <div class="container d-flex flex-column-reverse flex-md-row gap-3 gap-md-0 mb-5">
+        <div class="col-12 col-md-6 text-center">
+          <h1 class="mt-0 pt-0 pt-md-5 text-center text-md-start pb-md-2">A simple bookmark manager</h1>
+          <p class="col-12 col-md-10 text-greybookmark text-center text-md-start pb-md-2">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+            <button class="btn btn-primary shadow">Get in on Chrome</button>
+            <button class="btn btn-light shadow">Get in on Firefox</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 hero_image d-flex justify-content-center">
+          <img
+            src="./images/illustration-hero.svg"
+            alt="Illustration hero"
+            class="col-12 col-xl-11"
+          />
+        </div>
+      </div>
+      <div class="bg-primary rounded-pill position-absolute col-12 col-md-6 h-75 bottom-0 start-0 offset-4 offset-md-8 blue_block"></div>
+    </section>
+  </body>
+</html>
