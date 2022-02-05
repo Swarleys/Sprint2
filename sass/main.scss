@@ -1,5 +1,9 @@
 $primary: #5265e1;
 $secondary: #fa5959;
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $secondary;
+$accordion-button-focus-border-color: transparent;
+$accordion-button-focus-box-shadow: transparent;
 
 * {
   font-family: "Rubik", sans-serif;
@@ -176,4 +180,14 @@ h1 {
       margin-left: 25%;
     }
   }
+}
+
+.accordion {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.accordion-button:not(.collapsed) {
+  color: $black;
+  background-color: transparent;
 }
