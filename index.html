@@ -12,23 +12,17 @@
     />
     <link rel="stylesheet" href="./styles/main.min.css" />
 
-    <script
-      src="./src/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
+    <script src="./src/dist/js/bootstrap.bundle.min.js" defer></script>
     <title>Sprint2</title>
   </head>
   <body>
     <header class="container mb-5">
       <nav
-        class="navbar navbar-expand-md navbar-light sticky-top align-items-center pt-3"
+        class="navbar navbar-expand-md navbar-light fixed-top align-items-center pt-3 bg-white"
       >
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img
-              src="./images/logo-bookmark.svg"
-              alt="Bookmark logo"
-            />
+            <img src="./images/logo-bookmark.svg" alt="Bookmark logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -39,8 +33,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-          <img src="./images/icon-hamburger.svg" alt="hamburguer icon">
-            <!-- <span class="navbar-toggler-icon"></span> -->
+            <img src="./images/icon-hamburger.svg" alt="hamburguer icon" />
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
@@ -48,7 +41,7 @@
           >
             <ul class="navbar-nav mb-2 mb-lg-0 align-items-center gap-5">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="#features"
                   >FEATURES</a
                 >
               </li>
@@ -56,7 +49,7 @@
                 <a class="nav-link" href="#">PRICING</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link" href="#">SHARING</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"
@@ -73,16 +66,24 @@
         </div>
       </nav>
     </header>
-    <section class="position-relative overflow-hidden hero_section pt-3 mb-5">
-      <div class="container d-flex flex-column-reverse flex-md-row gap-3 gap-md-0 mb-5">
+    <section class="position-relative overflow-hidden hero_section pt-5 mb-5">
+      <div
+        class="container d-flex flex-column-reverse flex-md-row gap-3 gap-md-0 mb-5"
+      >
         <div class="col-12 col-md-6 text-center">
-          <h1 class="mt-0 pt-0 pt-md-5 text-center text-md-start pb-md-2">A simple bookmark manager</h1>
-          <p class="col-12 col-md-10 text-greybookmark text-center text-md-start pb-md-2">
+          <h1 class="mt-0 pt-0 pt-md-5 text-center text-md-start pb-md-2">
+            A simple bookmark manager
+          </h1>
+          <p
+            class="col-12 col-md-10 text-greybookmark text-center text-md-start pb-md-2"
+          >
             A clean and simple interface to organize your favourite websites.
             Open a new browser tab and see your sites load instantly. Try it for
             free.
           </p>
-          <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+          <div
+            class="d-flex gap-3 justify-content-center justify-content-md-start"
+          >
             <button class="btn btn-primary shadow">Get in on Chrome</button>
             <button class="btn btn-light shadow">Get in on Firefox</button>
           </div>
@@ -95,7 +96,204 @@
           />
         </div>
       </div>
-      <div class="bg-primary rounded-pill position-absolute col-12 col-md-6 h-75 bottom-0 start-0 offset-4 offset-md-8 blue_block"></div>
+      <div
+        class="bg-primary rounded-pill position-absolute col-12 col-md- h-75 bottom-0 start-0 offset-4 offset-md-8 blue_block"
+      ></div>
+    </section>
+    <section class="features-section container pt-5">
+      <div class="d-flex flex-column col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 gap-3 pb-5">
+        <h2 class="text-center" id="features">Features</h2>
+        <p
+          class="text-center text-greybookmark col-10 offset-1 col-sm-12 offset-sm-0"
+        >
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+      </div>
+
+      <ul
+        class="nav nav-pills mb-5 border-2 border-bottom d-flex flex-column flex-sm-row col-12 col-lg-8 m-auto align-content-center justify-content-sm-around gap-sm-2"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item align-self-center" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-bookmarking-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-bookmarking"
+            type="button"
+            role="tab"
+            aria-controls="pills-bookmarking"
+            aria-selected="true"
+          >
+            Simple Bookmarking
+          </button>
+        </li>
+        <li class="nav-item align-self-center" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-searching-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-searching"
+            type="button"
+            role="tab"
+            aria-controls="pills-searching"
+            aria-selected="false"
+          >
+            Speedy Searching
+          </button>
+        </li>
+        <li class="nav-item align-self-center" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-sharing-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-sharing"
+            type="button"
+            role="tab"
+            aria-controls="pills-sharing"
+            aria-selected="false"
+          >
+            Easy Sharing
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content py-3 py-md-5" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-bookmarking"
+          role="tabpanel"
+          aria-labelledby="pills-bookmarking-tab"
+        >
+          <div class="position-relative d-flex flex-column flex-md-row gap-5">
+            <div class="col-md-6">
+              <div
+                class="col-10 offset-1 col-sm-12 offset-sm-0 feature-image d-flex justify-content-center"
+              >
+                <img
+                  src="./images/illustration-features-tab-1.svg"
+                  alt="Simple bookmarking"
+                  class="col-12 col-xl-11"
+                />
+              </div>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center align-items-baseline gap-3 mt-sm-5"
+            >
+              <h3
+                class="col-10 offset-1 offset-sm-0 col-sm-12 text-center text-sm-start"
+              >
+                Bookmark in one click
+              </h3>
+              <p
+                class="col-10 offset-1 offset-sm-0 col-sm-12 text-greybookmark text-center text-sm-start"
+              >
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <button
+                class="btn btn-primary shadow text-center d-none d-sm-block"
+              >
+                More info
+              </button>
+            </div>
+            <div
+              class="bg-primary rounded-pill position-absolute col-12 col-md-8 h-75 start-0 blue_block"
+            ></div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-searching"
+          role="tabpanel"
+          aria-labelledby="pills-searching-tab"
+        >
+          <div class="position-relative d-flex flex-column flex-md-row gap-5">
+            <div class="col-md-6">
+              <div
+                class="col-10 offset-1 col-sm-12 offset-sm-0 feature-image d-flex justify-content-center"
+              >
+                <img
+                  src="./images/illustration-features-tab-2.svg"
+                  alt="Simple bookmarking"
+                  class="col-12 col-xl-11"
+                />
+              </div>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center align-items-baseline gap-3 mt-sm-5"
+            >
+              <h3
+                class="col-10 offset-1 offset-sm-0 col-sm-12 text-center text-sm-start"
+              >
+                Bookmark in one click
+              </h3>
+              <p
+                class="col-10 offset-1 offset-sm-0 col-sm-12 text-greybookmark text-center text-sm-start"
+              >
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <button
+                class="btn btn-primary shadow text-center d-none d-sm-block"
+              >
+                More info
+              </button>
+            </div>
+            <div
+              class="bg-primary rounded-pill position-absolute col-12 col-md-8 h-75 start-0 blue_block"
+            ></div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-sharing"
+          role="tabpanel"
+          aria-labelledby="pills-sharing-tab"
+        >
+          <div class="position-relative d-flex flex-column flex-md-row gap-5">
+            <div class="col-md-6">
+              <div
+                class="col-10 offset-1 col-sm-12 offset-sm-0 feature-image d-flex justify-content-center"
+              >
+                <img
+                  src="./images/illustration-features-tab-3.svg"
+                  alt="Simple bookmarking"
+                  class="col-12 col-xl-11"
+                />
+              </div>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center align-items-baseline gap-3 mt-sm-5"
+            >
+              <h3
+                class="col-10 offset-1 offset-sm-0 col-sm-12 text-center text-sm-start"
+              >
+                Bookmark in one click
+              </h3>
+              <p
+                class="col-10 offset-1 offset-sm-0 col-sm-12 text-greybookmark text-center text-sm-start"
+              >
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <button
+                class="btn btn-primary shadow text-center d-none d-sm-block"
+              >
+                More info
+              </button>
+            </div>
+            <div
+              class="bg-primary rounded-pill position-absolute col-12 col-md-8 h-75 start-0 blue_block"
+            ></div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>

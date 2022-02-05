@@ -43,7 +43,8 @@ h1 {
   font-size: 19px;
 }
 
-.hero_image {
+.hero_image,
+.feature-image img {
   z-index: 10;
 }
 
@@ -54,7 +55,7 @@ h1 {
 @include media-breakpoint-only(xs) {
   .hero_section .blue_block {
     height: 28% !important;
-    top:11%;
+    top: 11%;
   }
   .hero_section {
     * {
@@ -93,5 +94,51 @@ h1 {
     p {
       font-size: 18px;
     }
-  }  
+  }
+}
+
+.features-section {
+  padding-left: 0;
+  p {
+    font-size: 18px;
+  }
+  .blue_block {
+    margin-left: -300px;
+    top: 40% !important;
+  }
+  .nav-link.active {
+    color: $primary;
+    background-color: transparent;
+    border-bottom: 3px solid $secondary;
+    border-radius: 0;
+  }
+}
+
+@include media-breakpoint-only(sm) {
+  .features-section .blue_block {
+    height: 55% !important;
+    top: 10% !important;
+  }
+}
+@include media-breakpoint-only(xs) {
+  .features-section {
+    ul {
+      border-color: transparent !important;
+      li {
+        width: 90%;
+        border-top: 2px solid lightgrey;
+        &:last-child {
+          border-bottom: 2px solid lightgrey;
+        }
+      }
+      button {
+        margin: auto;
+      }
+    }
+    .blue_block {
+      height: 40% !important;
+      top: 7% !important;
+      margin-left: -100px;
+    }
+  }
 }
