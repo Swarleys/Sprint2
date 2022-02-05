@@ -142,3 +142,38 @@ h1 {
     }
   }
 }
+
+.download-section {
+  .extension {
+    p {
+      border-bottom: 6px dotted lightgrey !important;
+      font-size: 18px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .download-section {
+    .extension {
+      width: 30% !important;
+      margin-right: 26px;
+      position: relative;
+      &:nth-child(2) {
+        top: 60px;
+      }
+
+      &:nth-child(3) {
+        top: 120px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .download-section {
+    .extension {
+      width: 50% !important;
+      margin-left: 25%;
+    }
+  }
+}
