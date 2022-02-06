@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -492,5 +497,95 @@
         More info
       </button>
     </section>
+    <section class="contact-section bg-primary container-fluid mt-5 py-5">
+      <div
+        class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4"
+      >
+        <p class="text-white text-center mb-4">35,000+ already joined</p>
+        <h2 class="text-white text-center mb-4">
+          Stay up-to-date with what we’re doing
+        </h2>
+        <form class="text-center needs-validation" novalidate>
+          <div
+            class="mb-3 d-inline-block col-8 me-3 has-validation position-relative"
+          >
+            <label for="contactMail" class="form-label"></label>
+            <input
+              type="email"
+              class="form-control"
+              id="contactMail"
+              placeholder="Enter your email address"
+              name="contactMail"
+              required
+            />
+            <div class="invalid-tooltip">
+              Whoops, make sure it's an email
+            </div>
+            <!-- <div class="valid-feedback">Correct</div>
+            <div class="invalid-feedback">Please write a valid email.</div> -->
+          </div>
+          <button type="submit" class="btn btn-secondary text-white">
+            Contact Us
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <nav
+        class="navbar navbar-dark bg-dark flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <div
+          class="d-flex justify-content-start flex-column flex-md-row left-side m-0"
+        >
+          <a class="navbar-brand">
+            <img
+              class="navBar-footer"
+              src="./images/logo-bookmark-white.svg"
+              alt="Bookmark logo"
+          /></a>
+          <ul class="d-flex mb-0 flex-column flex-md-row">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-white" href="#"
+                >Features</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-white" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="share d-flex gap-5 right-side my-3 m-md-0">
+          <img src="./images/icon-facebook.svg" alt="Facebook icon" />
+          <img src="./images/icon-twitter.svg" alt="Twitter icon" />
+        </div>
+      </nav>
+    </footer>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
   </body>
 </html>

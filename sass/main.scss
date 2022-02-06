@@ -191,3 +191,29 @@ h1 {
   color: $black;
   background-color: transparent;
 }
+
+.contact-section {
+  input {
+    &::placeholder {
+      color: #{map-get($custom-theme-colors, "greybookmark")};
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .left-side {
+    margin-left: 10% !important;
+  }
+
+  .right-side {
+    margin-right: 10% !important;
+  }
+}
+
+@include media-breakpoint-only(xs) {
+  .contact-section {
+    form div, button {
+      width: 100% !important;
+    }
+  }
+}
