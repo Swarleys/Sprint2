@@ -158,17 +158,22 @@ h1 {
 
 @include media-breakpoint-up(lg) {
   .download-section {
-    .extension {
+    %extension {
       width: 30% !important;
       margin-right: 26px;
       position: relative;
-      &:nth-child(2) {
-        top: 60px;
-      }
+    }
+    .extension:first-child {
+      @extend %extension;
+    }
+    .extension:nth-child(2) {
+      @extend %extension;
+      top: 60px;
+    }
 
-      &:nth-child(3) {
-        top: 120px;
-      }
+    .extension:nth-child(3) {
+      @extend %extension;
+      top: 120px;
     }
   }
 }
